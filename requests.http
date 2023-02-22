@@ -1,0 +1,154 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Tatis loquis",
+    "age": "99",
+    "email": "tatiladiabla@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/63f5321da54b4cb156ad151e HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/63f53312c23e3fa3da5aff55 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "El papu Mendel",
+    "age": "81",
+    "email": "georgeMendel@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/63f54959d381f245b2fe3cf9 HTTP/1.1
+
+
+// ----------- Direction ------------ //
+
+###
+POST http://localhost:9000/api/direction HTTP/1.1
+Content-Type: application/json
+
+{
+    "dir_id": "1",
+    "mov_id": "1"
+}
+
+###
+GET http://localhost:9000/api/direction HTTP/1.1
+
+###
+GET http://localhost:9000/api/direction HTTP/1.1
+
+###
+PUT http://localhost:9000/api/direction HTTP/1.1
+Content-Type: application/json
+
+{
+    "dir_id": "1",
+    "mov_id": "1"
+}
+
+###
+DELETE http://localhost:9000/api/direction HTTP/1.1
+
+
+// ----------- Movie Cast ------------ //
+
+###
+POST http://localhost:9000/api/moviecast HTTP/1.1
+Content-Type: application/json
+
+{
+    "act_id": "2",
+    "mov_id": "2",
+    "role": "Antagonist"
+}
+
+###
+GET http://localhost:9000/api/moviecast HTTP/1.1
+
+###
+GET http://localhost:9000/api/moviecast HTTP/1.1
+
+###
+PUT http://localhost:9000/api/moviecast HTTP/1.1
+Content-Type: application/json
+
+{
+    "act_id": "2",
+    "mov_id": "2",
+    "role": "Antagonist"
+}
+
+###
+DELETE http://localhost:9000/api/moviecast HTTP/1.1
+
+
+// ----------- Director ------------ //
+
+###
+POST http://localhost:9000/api/director HTTP/1.1
+Content-Type: application/json
+
+{
+    "dir_id": 2,
+    "dir_fname": "Lex",
+    "dir_lname": "Luthor"
+}
+
+###
+GET http://localhost:9000/api/director HTTP/1.1
+
+###
+GET http://localhost:9000/api/director HTTP/1.1
+
+###
+PUT http://localhost:9000/api/director HTTP/1.1
+Content-Type: application/json
+
+{
+    "dir_id": 2,
+    "dir_fname": "Lex",
+    "dir_lname": "Luthor"
+}
+
+###
+DELETE http://localhost:9000/api/director HTTP/1.1
+
+
+// ----------- Reviewer ------------ //
+
+###
+POST http://localhost:9000/api/reviewer HTTP/1.1
+Content-Type: application/json
+
+{
+    "rev_id": 1,
+    "rev_name": "Lyrics"
+}
+
+###
+GET http://localhost:9000/api/reviewer HTTP/1.1
+
+###
+GET http://localhost:9000/api/reviewer HTTP/1.1
+
+###
+PUT http://localhost:9000/api/reviewer HTTP/1.1
+Content-Type: application/json
+
+{
+    "rev_id": 1,
+    "rev_name": "Lyrics"
+}
+
+###
+DELETE http://localhost:9000/api/reviewer HTTP/1.1
+
+
