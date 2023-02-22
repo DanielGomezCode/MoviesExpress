@@ -18,7 +18,7 @@ const actorSchema = mongoose.Schema({
     act_gender: {
         type: String,
         required: true,
-        maxlenght: 20
+        maxlength: 20
     }
 })
 

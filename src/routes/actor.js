@@ -4,7 +4,7 @@ const actorSchema = require("../models/actor")
 const router = express.Router();
 
 // create actor
-router.post('/actor', (req, res) => {
+router.post('/actor', (req, res) => { 
    const actor = actorSchema(req.body);
    actor
    .save()
