@@ -223,3 +223,32 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:9000/api/movie HTTP/1.1
+
+// -----------genres ------------ //
+
+###
+POST http://localhost:9000/api/genres HTTP/1.1
+Content-Type: application/json
+
+{
+    "gen_id": 1001,
+    "mov_tile": "Action",
+}
+
+###
+GET http://localhost:9000/api/genres HTTP/1.1
+
+###
+GET http://localhost:9000/api/genres HTTP/1.1
+
+###
+PUT http://localhost:9000/api/genres HTTP/1.1
+Content-Type: application/json
+
+{
+    "gen_id": 1001,
+    "mov_tile": "Action",
+}
+
+###
+DELETE http://localhost:9000/api/genres HTTP/1.1
