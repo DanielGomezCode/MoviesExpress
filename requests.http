@@ -184,3 +184,42 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:9000/api/actor HTTP/1.1
+
+// -----------Movie ------------ //
+
+###
+POST http://localhost:9000/api/movie HTTP/1.1
+Content-Type: application/json
+
+{
+    "mov_id": 901,
+    "mov_tile": "Avatar",
+    "mov_year": 1958,
+    "mov_time": 128,
+    "mov_lang":"english",
+    "mov_dt_rel": 1998-01-23,
+    "mov_red_country": "uk",
+}
+
+###
+GET http://localhost:9000/api/movie HTTP/1.1
+
+###
+GET http://localhost:9000/api/movie HTTP/1.1
+
+###
+PUT http://localhost:9000/api/movie HTTP/1.1
+Content-Type: application/json
+
+{
+    "mov_id": 901,
+    "mov_tile": "Avatar",
+    "mov_year": 1958,
+    "mov_time": 128,
+    "mov_lang":"english",
+    "mov_dt_rel": 1998-01-23,
+    "mov_red_country": "uk",
+}
+
+###
+DELETE http://localhost:9000/api/movie HTTP/1.1
