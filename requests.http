@@ -185,29 +185,104 @@ Content-Type: application/json
 ###
 DELETE http://localhost:9000/api/actor HTTP/1.1
 
+// -----------Movie ------------ //
 
-
-
-
-
-// -------- Ejemplo ---------- //
 ###
-POST http://localhost:9000/api/ejemplo HTTP/1.1
+POST http://localhost:9000/api/movie HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre": "Diana",
-    "edad": 24
+    "mov_id": 901,
+    "mov_tile": "Avatar",
+    "mov_year": 1958,
+    "mov_time": 128,
+    "mov_lang":"english",
+    "mov_dt_rel": 1998-01-23,
+    "mov_red_country": "uk",
 }
 
 ###
-GET http://localhost:9000/api/ejemplo HTTP/1.1
+GET http://localhost:9000/api/movie HTTP/1.1
 
 ###
-PUT http://localhost:9000/api/ejemplo/63f7dd489724fc5c0e8ca000 HTTP/1.1
+GET http://localhost:9000/api/movie HTTP/1.1
+
+###
+PUT http://localhost:9000/api/movie HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre": "Diana",
-    "edad": 20
+    "mov_id": 901,
+    "mov_tile": "Avatar",
+    "mov_year": 1958,
+    "mov_time": 128,
+    "mov_lang":"english",
+    "mov_dt_rel": 1998-01-23,
+    "mov_red_country": "uk",
 }
+
+###
+DELETE http://localhost:9000/api/movie HTTP/1.1
+
+// -----------genres ------------ //
+
+###
+POST http://localhost:9000/api/genres HTTP/1.1
+Content-Type: application/json
+
+{
+    "gen_id": 1001,
+    "mov_tile": "Action",
+}
+
+###
+GET http://localhost:9000/api/genres HTTP/1.1
+
+###
+GET http://localhost:9000/api/genres HTTP/1.1
+
+###
+PUT http://localhost:9000/api/genres HTTP/1.1
+Content-Type: application/json
+
+{
+    "gen_id": 1001,
+    "mov_tile": "Action",
+}
+
+###
+DELETE http://localhost:9000/api/genres HTTP/1.1
+
+
+// ----------- Rating------------ //
+
+###
+POST http://localhost:9000/api/rating HTTP/1.1
+Content-Type: application/json
+
+{
+    "mov_id": 901,
+    "rev_id": "9001",
+    "rev_stars" : 8.40,
+    "num_o_ratings" : 779489,
+}
+
+###
+GET http://localhost:9000/api/rating HTTP/1.1
+
+###
+GET http://localhost:9000/api/rating HTTP/1.1
+
+###
+PUT http://localhost:9000/api/rating HTTP/1.1
+Content-Type: application/json
+
+{
+    "mov_id": 901,
+    "rev_id": 9001,
+    "rev_stars" : 8.40,
+    "num_o_ratings" : 779489,
+}
+
+###
+DELETE http://localhost:9000/api/rating HTTP/1.1
