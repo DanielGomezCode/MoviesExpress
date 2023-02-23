@@ -13,6 +13,7 @@ const ratingRoutes = require("./routes/rating")
 const genresRoutes = require("./routes/genres")
 const movgenresRoutes = require("./routes/movie_genres")
 const movieRoutes = require("./routes/movie")
+const ejemploRoutes = require("./routes/ejemplo")
 
 
 const app = express();
@@ -20,7 +21,7 @@ const port = process.env.PORT || 9000;
 
 // middleware
 app.use(express.json())
-app.use('/api', userRoutes, directionRoutes, movieCastRoutes, directorRoutes, reviewerRoutes, actorRoutes, ratingRoutes, genresRoutes, movgenresRoutes, movieRoutes);
+app.use('/api', userRoutes, directionRoutes, movieCastRoutes, directorRoutes, reviewerRoutes, actorRoutes, ratingRoutes, genresRoutes, movgenresRoutes, movieRoutes, ejemploRoutes);
 
 
 // Routes

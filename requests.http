@@ -97,29 +97,29 @@ POST http://localhost:9000/api/director HTTP/1.1
 Content-Type: application/json
 
 {
-    "dir_id": 2,
-    "dir_fname": "Lex",
-    "dir_lname": "Luthor"
+    "dir_id": 5,
+    "dir_fname": "Lina",
+    "dir_lname": "Caceres"
 }
 
 ###
 GET http://localhost:9000/api/director HTTP/1.1
 
 ###
-GET http://localhost:9000/api/director HTTP/1.1
+GET http://localhost:9000/api/director/63f5aa0fc8f597ded2d11561 HTTP/1.1
 
 ###
-PUT http://localhost:9000/api/director HTTP/1.1
+PUT http://localhost:9000/api/director/63f5aa0fc8f597ded2d11561 HTTP/1.1
 Content-Type: application/json
 
 {
-    "dir_id": 2,
-    "dir_fname": "Lex",
-    "dir_lname": "Luthor"
+    "dir_id": 27,
+    "dir_fname": "Lina",
+    "dir_lname": "Caceres"
 }
 
 ###
-DELETE http://localhost:9000/api/director HTTP/1.1
+DELETE http://localhost:9000/api/director/63f7caeffc96749da3dbca69 HTTP/1.1
 
 
 // ----------- Reviewer ------------ //
@@ -129,8 +129,8 @@ POST http://localhost:9000/api/reviewer HTTP/1.1
 Content-Type: application/json
 
 {
-    "rev_id": 1,
-    "rev_name": "Lyrics"
+    "rev_id": 2,
+    "rev_name": "XD"
 }
 
 ###
@@ -159,9 +159,9 @@ POST http://localhost:9000/api/actor HTTP/1.1
 Content-Type: application/json
 
 {
-    "act_id": 7,
-    "act_fname": "Juan",
-    "act_lname": "Mozart",
+    "act_id": 10,
+    "act_fname": "Hola",
+    "act_lname": "Mundo",
     "act_gender": "M"
 }
 
@@ -184,3 +184,30 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:9000/api/actor HTTP/1.1
+
+
+
+
+
+
+// -------- Ejemplo ---------- //
+###
+POST http://localhost:9000/api/ejemplo HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Diana",
+    "edad": 24
+}
+
+###
+GET http://localhost:9000/api/ejemplo HTTP/1.1
+
+###
+PUT http://localhost:9000/api/ejemplo/63f7dd489724fc5c0e8ca000 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Diana",
+    "edad": 20
+}

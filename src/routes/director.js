@@ -5,10 +5,9 @@ const director = require("../models/director");
 const router = express.Router();
 
 // create director
-router.post('/director', (req, res) => {
+router.post('/director', (req, res) => { 
    const director = directorSchema(req.body);
-   director
-   .save()
+   director.save()
    .then((data) => res.json(data))
    .catch((error) => res.json({ message: error }))
 });
@@ -22,7 +21,7 @@ router.get('/director', (req, res) => {
  });
 
 // Get a director
-router.get('/director/:id', (req, res) => {
+router.get('/director/:id', (req, res) => { 
     const { id } = req.params;
     director
     .findById(id)
